@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Alta.css">
+    <title>Alta</title>
+</head>
+<body>
+    <!-- Sección de formulario -->
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="#">
+                    <!-- Título del formulario -->
+                    <h2>Dar de Alta</h2>
+                    <!-- Campo de entrada para el ID Xip -->
+                    <div class="inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input type="text" name="email" id="xip">
+                        <label>Id Xip</label> 
+                    </div>
+                    <!-- Selección de pacientes -->
+                    <div class="selects">
+                        <label>Pacientes</label>
+                        <select name="pacientes" id="pacientes">
+                        </select>
+                    </div>
+                    <!-- Selección de medicamentos -->
+                    <div class="selects">
+                        <label>Medicamentos</label>
+                        <select name="medicamentos" id="medicamentos">
+                        </select>
+                    </div>
+                    <!-- Campo de entrada para la fecha límite -->
+                    <div class="inputbox">
+                        <ion-icon name="date"></ion-icon>
+                        <input type="date" name="date" id="date">
+                        <label>Fecha Limite</label> 
+                    </div>
+                    <!-- Botones para enviar y gestionar -->
+                    <button type="submit" onclick="enviar()">Enviar</button>
+                    <button type="submit" onclick="goGestion()">Gestion</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Script para la página -->
+    <script src="Alta.js"></script>
+</body>
+</html>
